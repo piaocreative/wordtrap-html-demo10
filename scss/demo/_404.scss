@@ -1,0 +1,79 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+.error-404 {
+    position: relative;
+
+    .error-banner {
+        img {
+            height: 53rem;
+        }
+    }
+
+    .error-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+
+        .error-title {
+            font-size: 17rem;
+            margin-bottom: -3rem;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 14rem;
+            }
+        }
+
+        p {
+            font-size: 1.125rem;
+            font-weight: 300;
+            letter-spacing: 0.05rem;
+        }
+    }
+}
+
+#error-sidebar {
+    h3 {
+        font-size: 1.875rem;
+    }
+
+    .sub-icon {
+        font-size: 1.325rem;
+        overflow: hidden;
+          text-align: center;
+
+        &:before,
+        &:after {
+            background-color: $theme-color;
+            content: "";
+            display: inline-block;
+            height: 1px;
+            position: relative;
+            vertical-align: middle;
+            width: 9rem;
+        }
+
+        &:before {
+            right: 0.5em;
+            margin-left: -50%;
+        }
+
+        &:after {
+            left: 0.5em;
+            margin-right: -50%;
+        }
+    }
+
+    .line {
+        height: 1px;
+        background-color: $theme-color;
+        width: 5rem;
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}

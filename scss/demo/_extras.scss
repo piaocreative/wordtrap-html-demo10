@@ -1,0 +1,212 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+.link-icon {
+	background-image: url(../images/icons/link.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 2.5625rem;
+	height: 2.5625rem;
+
+	&.black {
+		background-image: url(../images/icons/link_black.png);
+	}
+}
+
+a {
+	.link-icon {
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	&:hover {
+		.link-icon {
+			@include translateX(1rem);
+		}
+	}	
+}
+
+.about-top, .about-main, .about-bottom {
+	border-color: #efefef;
+
+	p {
+		font-size: 1.25rem;
+		font-family: $body-font;
+		line-height: 1.75rem;
+		color: #83746d;
+		letter-spacing: 0.05rem;
+	}
+}
+
+.about-top {
+	position: relative;
+
+	.obverse-img {
+		position: absolute;
+		right: 0;
+		top: 8rem;
+		width: 21rem;
+
+		@include media-breakpoint-down(lg) {
+			top: 26.4rem;
+			right: 0.8rem;
+		}
+
+		@include media-breakpoint-down(sm) {
+			position: relative;
+			top: 0.5rem;
+			right: 0;
+			width: auto;
+		}
+	}
+}
+
+.about-main {
+	h3 {
+		&:before {
+			content: "";
+			display: inline-block;
+			height: 1px;
+			position: relative;
+			vertical-align: middle;
+			width: 17rem;
+			background-color: $secondary;
+			margin-right: 2rem;
+		}
+	}
+}
+
+.baristas-details {
+	h4 {
+		letter-spacing: 0.1rem;
+		font-weight: 800;
+	}
+
+	p {
+		font-size: 1.125rem;
+		line-height: 1.4rem;
+	}
+}
+
+
+.sale-banner {
+	padding: 0 2rem;
+
+	img {
+		width: 5rem;
+		height: 4.5rem;
+	}
+	
+	h4 {
+		letter-spacing: 0.1rem;
+	}
+
+	p {
+		color: #75655d;
+		line-height: 1.2rem;
+		font-size: 0.8rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding: 1rem;
+	}
+}
+
+.page-links {
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 500;
+
+	&:before,
+	&:after {
+		background-color: $theme-color;
+		content: "";
+		display: inline-block;
+		height: 1px;
+		position: relative;
+		vertical-align: middle;
+		width: 4rem;
+	}
+
+	&:before {
+		right: 0.5em;
+		margin-left: -50%;
+	}
+
+	&:after {
+		left: 0.5em;
+		margin-right: -50%;
+	}
+}
+
+.about-line {
+	position: absolute;
+	top: 20rem;
+	left: 0;
+
+	div {
+		width: 9rem;
+		height: 1px;
+		background-color: $secondary;
+		margin-bottom: 1.7rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+}
+
+// slider items//
+.slick-prev::before, .slick-next:before {
+	font-size: 1.5rem;
+	opacity: 1;
+	color:#dcdcdc;
+
+	@include media-breakpoint-down(lg) {
+	   display: none;
+   }
+}
+
+.slick-prev, .slick-next {
+	top: 28.5rem;
+}
+
+.slick-prev {
+	left: 15rem;
+
+	@include media-breakpoint-down(lg) {
+	   display: none !important;
+   }
+}
+
+.slick-next {
+	left: 23rem;
+
+   @include media-breakpoint-down(lg) {
+	   display: none !important;
+   }
+}
+
+.slick-slide {
+   margin: 2rem;
+   margin-top: 4rem;
+}
+.slick-list {
+	padding: 0 !important;
+}
