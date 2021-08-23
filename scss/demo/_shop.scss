@@ -408,9 +408,36 @@
 			background-color: #bf7628;
 			position: relative;
 			vertical-align: middle;
-			width: 27rem;
+			width: 24rem;
 			margin-right: 1rem;
 			letter-spacing: 0.05rem;
 		}
 	}
+}
+
+.reviews {
+	z-index: 2;
+}
+
+.review-first, .review-second {
+	position: absolute;
+	background-color: #fff;
+	z-index: 1;
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+}
+.review-first {
+    top: 6rem;
+    left: 1.5rem;
+    width: 45rem;
+    height: 14rem;
+}
+
+.review-second {
+    top: 8rem;
+    left: 0rem;
+    width: 48rem;
+    height: 10rem;
 }
