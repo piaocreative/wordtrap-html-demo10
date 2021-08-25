@@ -114,12 +114,14 @@ a {
 	
 	h4 {
 		letter-spacing: 0.1rem;
+		font-weight: 600;
 	}
 
 	p {
 		color: #75655d;
 		line-height: 1.2rem;
-		font-size: 0.875rem;
+		font-size: 0.85rem;
+		letter-spacing: 0.02rem;
 	}
 
 	@include media-breakpoint-down(lg) {
@@ -128,6 +130,11 @@ a {
 }
 
 #subscribe-form {
+	input {
+		padding: 1.8rem;
+		border-width: 3px;
+	}
+
 	button {
 		letter-spacing: 0.15rem;
     	font-size: 1.25rem;
@@ -139,7 +146,7 @@ a {
 	overflow: hidden;
 	text-align: center;
 	text-decoration: none;
-	font-weight: 500;
+	font-weight: 600;
 	letter-spacing: 0.1rem;
 
 	&:before,
@@ -193,7 +200,7 @@ a {
 }
 
 .slick-prev, .slick-next {
-	top: 24.8rem;
+	top: 29rem;
 }
 
 .slick-prev {

@@ -87,7 +87,7 @@
 		overflow: hidden;
   		text-align: center;
 		text-decoration: none;
-		line-height: 1.5rem;
+		line-height: 1.5;
 		letter-spacing: 0.05rem;
 		
 		&:after {
@@ -248,7 +248,6 @@
 				height: 22rem;
 			}
 		}
-
 	}
 
 	&.ads1 {
@@ -261,13 +260,23 @@
 			right: 0;
 			height: 100%;
 
+			h4 {
+				letter-spacing: 0.1rem;
+			}
+
 			h2 {
 				font-size: 10rem;
 				margin-top: -3.5rem;
+				letter-spacing: 0.8rem;
+			}
+
+			h3 {
+				font-size: 3.5rem;
 			}
 
 			p {
 				font-size: 8rem;
+				letter-spacing: 0.5rem;
 			}
 
 			@include media-breakpoint-down(sm) {
@@ -389,6 +398,7 @@
 		line-height: 1.8rem;
 		font-size: 1.125rem;
 		color: #3e271c;
+		letter-spacing: 0.05rem;
 	}
 
 	.review-author {
