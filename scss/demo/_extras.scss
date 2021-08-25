@@ -121,7 +121,7 @@ a {
 		color: #75655d;
 		line-height: 1.2rem;
 		font-size: 0.85rem;
-		letter-spacing: 0.02rem;
+		letter-spacing: 0.05em;
 	}
 
 	@include media-breakpoint-down(lg) {
@@ -147,7 +147,8 @@ a {
 	text-align: center;
 	text-decoration: none;
 	font-weight: 600;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.05rem;
+	font-size: 1.125rem;
 
 	&:before,
 	&:after {
