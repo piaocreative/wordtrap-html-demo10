@@ -202,7 +202,7 @@ a {
 }
 
 .slick-prev, .slick-next {
-	top: 29rem;
+	top: 26.5rem;
 }
 
 .slick-prev {
@@ -227,4 +227,15 @@ a {
 }
 .slick-list {
 	padding: 0 !important;
+}
+
+.slick-dots {
+	li {
+		button {
+			&:before {
+				font-size: 13px;
+				color: $white;
+			}
+		}
+	}
 }

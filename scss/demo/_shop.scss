@@ -20,6 +20,7 @@
 .product {
 	position: relative;
 	padding: 1rem;
+	border: 1px solid transparent;
 
 	.product-image {
 		position: relative;
@@ -134,7 +135,7 @@
 	}
 
 	&:hover {
-		border: 1px solid $theme-color;
+		border-color: $theme-color;
 
 		.product-image {
 			> a:nth-of-type(2) {
@@ -193,8 +194,8 @@
 	font-weight: 500;
     position: absolute;
 	text-transform: uppercase;
-	left: 19rem;
-    top: 1.5rem;
+	left: 21rem;
+    top: 2rem;
     z-index: 2;
 }
 
@@ -242,11 +243,7 @@
 
 	.ads-bg {
 		img {
-			height: 100%;
-
-			@include media-breakpoint-down(lg) {
-				height: 22rem;
-			}
+			height: 40rem;
 		}
 	}
 
@@ -265,17 +262,18 @@
 			}
 
 			h2 {
-				font-size: 10rem;
+				font-size: 11.25rem;
 				margin-top: -3.5rem;
 				letter-spacing: 0.8rem;
+				line-height: 1.2;
 			}
 
 			h3 {
-				font-size: 3.5rem;
+				font-size: 3.75rem;
 			}
 
 			p {
-				font-size: 8rem;
+				font-size: 9.375rem;
 				letter-spacing: 0.5rem;
 			}
 
@@ -353,13 +351,15 @@
 	}
 	
 	.menu-item {
+		border-bottom: 1px solid transparent;
+
 		img {
 			opacity: 0;
 		}
 
 		a {
 			text-decoration: none;
-			font-size: 1.5rem;
+			font-size: 1.625rem;
 			color: $secondary;
 			font-family: $body-font;
 			font-weight: 700;
@@ -396,7 +396,7 @@
 	.review-info {
 		padding: 1.5rem 3rem;
 		line-height: 1.8rem;
-		font-size: 1.125rem;
+		font-size: 1.25rem;
 		color: #3e271c;
 		letter-spacing: 0.05rem;
 	}
@@ -434,7 +434,7 @@
 	background-color: #fff;
 	z-index: 1;
 
-	@include media-breakpoint-down(lg) {
+	@include media-breakpoint-down(xxl) {
 		display: none;
 	}
 }

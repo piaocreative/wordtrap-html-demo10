@@ -28,8 +28,8 @@
         object-fit: cover;
         object-position: center;
 
-        @include media-breakpoint-down(sm) {
-            height: 22rem;
+        @include media-breakpoint-down(lg) {
+            height: 35rem;
         }
     }
 
