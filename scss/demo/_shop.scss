@@ -18,6 +18,7 @@
 /* Product
 -----------------------------------------------------------------*/
 .product {
+	border: 1px solid transparent;
 	position: relative;
 	padding: 1rem;
 	border: 1px solid transparent;
@@ -144,10 +145,10 @@
 			}
 		}
 		
-		.product-price {
-			font-size: 1.8rem;
-			font-weight: 800;
-		}
+		// .product-price {
+		// 	font-size: 1.8rem;
+		// 	font-weight: 800;
+		// }
 	}
 
 	.add-to-cart {
@@ -232,9 +233,6 @@
 }
 
 
-
-
-
 /* Ads
 -----------------------------------------------------------------*/
 .ads {
@@ -243,7 +241,7 @@
 
 	.ads-bg {
 		img {
-			height: 40rem;
+			height: 34.375rem;
 		}
 	}
 
@@ -371,7 +369,7 @@
 				@include transition(all 0.3s ease-in-out);	
 			}
 
-			border-bottom: 1px solid $primary;
+			border-color: $primary;
 		}
 	}
 }

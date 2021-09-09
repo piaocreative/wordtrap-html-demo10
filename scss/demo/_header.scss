@@ -59,8 +59,9 @@
 .navbar-brand {
 	@include media-breakpoint-up(lg) {
 		position: absolute;
-		left: 45%;
+		left: 50%;
 		top: 0;
+		transform: translateX(-50%);
 	}
 
 	@include media-breakpoint-down(lg) {
@@ -69,7 +70,7 @@
 	}
 
 	img {
-		width: 90%;
+		width: 12.625rem;
 		height: auto;
 	}
 }

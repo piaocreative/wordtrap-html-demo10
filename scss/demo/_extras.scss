@@ -103,33 +103,6 @@ a {
 	}
 }
 
-
-.sale-banner {
-	padding: 0 1.5rem;
-
-	img {
-		width: 5rem;
-		height: 4.5rem;
-	}
-	
-	h4 {
-		font-size: 1.625rem;
-		letter-spacing: 0.1rem;
-		font-weight: 500;
-	}
-
-	p {
-		color: #75655d;
-		line-height: 1.25rem;
-		font-size: 0.875rem;
-		letter-spacing: 0.05em;
-	}
-
-	@include media-breakpoint-down(lg) {
-		padding: 1rem;
-	}
-}
-
 #subscribe-form {
 	input {
 		padding: 1.8rem;
@@ -144,12 +117,13 @@ a {
 }
 
 .page-links {
+	display: block;
 	overflow: hidden;
 	text-align: center;
 	text-decoration: none;
-	font-weight: 600;
+	font-weight: 500;
 	letter-spacing: 0.05rem;
-	font-size: 1.125rem;
+	font-size: 1.25rem;
 
 	&:before,
 	&:after {
@@ -225,6 +199,7 @@ a {
    margin: 2rem;
    margin-top: 4rem;
 }
+
 .slick-list {
 	padding: 0 !important;
 }

@@ -1,4 +1,6 @@
 .logos {
-	padding-top: 10rem;
-	padding-bottom: 10rem;
+	.logo-item {
+		display: flex;
+		align-items: center;
+	}
 } 
