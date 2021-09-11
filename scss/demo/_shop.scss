@@ -275,9 +275,16 @@
 				letter-spacing: 0.5rem;
 			}
 
+			@include media-breakpoint-down(lg) {
+				h2 {
+					font-size: 6.25rem;
+					margin-top: 1.5rem;
+				}
+			}
+
 			@include media-breakpoint-down(sm) {
 				h2 {
-					font-size: 5rem;
+					font-size: 4rem;
 				}
 
 				p {
