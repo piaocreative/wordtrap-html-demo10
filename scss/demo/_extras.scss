@@ -58,13 +58,13 @@ a {
 
 	.obverse-img {
 		position: absolute;
-		right: 0;
+		right: -4rem;
 		top: 8rem;
 		width: 21rem;
 
 		@include media-breakpoint-down(lg) {
-			top: 26.4rem;
-			right: 0.8rem;
+			top: 0;
+			right: 0;
 		}
 
 		@include media-breakpoint-down(sm) {
@@ -88,6 +88,12 @@ a {
 			background-color: $secondary;
 			margin-right: 2rem;
 		}
+	}
+}
+
+.baristas-image {
+	img {
+		width: 100%;
 	}
 }
 

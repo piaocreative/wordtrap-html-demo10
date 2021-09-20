@@ -72,10 +72,15 @@
 
 	.product-title {
 		font-weight: 500;
+		letter-spacing: 0.15rem;
 
 		a {
 			color: $secondary;
 			text-decoration: none;
+		}
+
+		@include media-breakpoint-down(lg) {
+			padding-top: 1rem;
 		}
 	}
 
@@ -99,8 +104,8 @@
 			border-bottom: 1px dotted $secondary;
 			position: relative;
 			vertical-align: middle;
-			width: 8rem;
-			margin-left: 2rem;
+			width: 11rem;
+			margin-left: 0.5rem;
 		}
 
 		@include media-breakpoint-down(lg) {
@@ -195,7 +200,7 @@
 	font-weight: 500;
     position: absolute;
 	text-transform: uppercase;
-	left: 21rem;
+	left: 22rem;
     top: 2rem;
     z-index: 2;
 }
@@ -235,25 +240,101 @@
 
 /* Ads
 -----------------------------------------------------------------*/
+// .ads {
+//     position: relative;
+//     display: block;
+
+// 	.ads-bg {
+// 		img {
+// 			height: 34.375rem;
+// 		}
+// 	}
+
+// 	&.ads1 {
+// 		margin-bottom: 1.875rem;
+
+// 		.ads-body {
+// 			position: absolute;
+// 			left: 0;
+// 			top: 0;
+// 			right: 0;
+// 			height: 100%;
+
+// 			h4 {
+// 				letter-spacing: 0.1rem;
+// 			}
+
+// 			h2 {
+// 				font-size: 11.25rem;
+// 				margin-top: -3.5rem;
+// 				letter-spacing: 0.8rem;
+// 				line-height: 1.2;
+// 			}
+
+// 			h3 {
+// 				font-size: 3.75rem;
+// 			}
+
+// 			p {
+// 				font-size: 9.375rem;
+// 				letter-spacing: 0.5rem;
+// 			}
+
+// 			@include media-breakpoint-down(lg) {
+// 				h2 {
+// 					font-size: 6.25rem;
+// 					margin-top: 1.5rem;
+// 				}
+// 			}
+
+// 			@include media-breakpoint-down(sm) {
+// 				h2 {
+// 					font-size: 4rem;
+// 				}
+
+// 				p {
+// 					font-size: 6rem;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
 .ads {
     position: relative;
     display: block;
+    margin-bottom: 2.5rem;
 
-	.ads-bg {
-		img {
-			height: 34.375rem;
-		}
-	}
+    .ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
 
-	&.ads1 {
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .ads-body {
+        position: relative;
+        z-index: 1;
+    }
+
+    &.ads1 {
 		margin-bottom: 1.875rem;
 
 		.ads-body {
-			position: absolute;
-			left: 0;
-			top: 0;
-			right: 0;
-			height: 100%;
+			padding: 7rem 0;
 
 			h4 {
 				letter-spacing: 0.1rem;
@@ -284,7 +365,7 @@
 
 			@include media-breakpoint-down(sm) {
 				h2 {
-					font-size: 4rem;
+					font-size: 3.5rem;
 				}
 
 				p {
@@ -404,6 +485,10 @@
 		font-size: 1.25rem;
 		color: #3e271c;
 		letter-spacing: 0.05rem;
+
+		@include media-breakpoint-down(sm) {
+			padding: 1.5rem 0;
+		}
 	}
 
 	.review-author {
@@ -426,6 +511,10 @@
 			width: 24rem;
 			margin-right: 1rem;
 			letter-spacing: 0.05rem;
+
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
 		}
 	}
 }
@@ -455,4 +544,9 @@
     left: 0rem;
     width: 48rem;
     height: 10rem;
+}
+
+.review-control {
+	font-size: 1.25rem;
+	z-index: 3;
 }
