@@ -40,7 +40,6 @@ $heading-font:                BROADW;
 
 // Font sizes
 $h1-font-size:                	5.375rem;
-$h1-about: 						          5.375rem;
 $h2-font-size:                	3.5rem;
 $h3-font-size:                	2.5rem;
 $h4-font-size:                	1.625rem;
@@ -133,9 +132,10 @@ $input-placeholder-color:       #ffffff;
 // Buttons
 $btn-font-family:               $body-font;
 
-$btn-padding-y:                 1.2rem;
-$btn-padding-x:                 6rem;
+$btn-padding-y:                 1.5rem;
+$btn-padding-x:                 4.5rem;
 $btn-font-size:                 1.125rem;
+$btn-font-weight:               500;
 
 $btn-padding-y-sm:              0.5rem;
 $btn-padding-x-sm:              1.5rem;

@@ -18,7 +18,7 @@
 	background-color: black;
 
 	a {
-		text-decoration: none !important;
+		text-decoration: none;
 	}
 }
 
@@ -52,14 +52,8 @@
 
 	.navbar-brand {
 		img {
-			width: 30%;
+			width: 5rem;
 			margin-top: -1rem;
-
-			@include media-breakpoint-down(lg) {
-				width: 20%;
-				margin-top: 1rem;
-				margin-bottom: 1rem;
-			}
 		}
 	}
 }

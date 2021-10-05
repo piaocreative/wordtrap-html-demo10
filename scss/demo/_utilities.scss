@@ -58,7 +58,7 @@ img {
 	position: relative;
 	
 	@include media-breakpoint-down(lg) {
-		padding-top: 3rem;
+		padding-top: 2rem;
 		padding-bottom: 2rem;
 	}
 }

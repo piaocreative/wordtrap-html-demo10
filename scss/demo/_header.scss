@@ -148,7 +148,6 @@
 	margin-right: -15rem;
 
 	.nav-item {			
-
 		@include media-breakpoint-up(lg) {
 			padding: .875rem;
 		}
@@ -220,7 +219,6 @@
 /* ----------------------------------------------------------------
 	Top Infos
 -----------------------------------------------------------------*/
-
 #top-infos {
 	position: absolute;
 	bottom: 0rem;
@@ -235,16 +233,7 @@
 		text-decoration: none;
 		font-size: 1.125rem;
 		color: white;
-		font-weight: 400;
 		letter-spacing: 0.1rem;
-
-		@include media-breakpoint-down(sm) {
-			font-size: 0.875rem;
-		}
-	}
-
-	@include media-breakpoint-down(lg) {
-		padding-bottom: 1rem;
 	}
 }
 

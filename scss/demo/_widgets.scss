@@ -21,15 +21,13 @@
 
 	p {
 		font-family: $body-font;
-		font-weight: 400;
-		line-height: 1.3rem!important;
+		line-height: 1.3rem;
 		color: #ffffff;
 		font-size: 0.75rem;
 	}
 
 	a {
 		font-family: $body-font;
-		font-weight: 400;
 	}
 
 	.widget-title {
@@ -95,7 +93,6 @@
 
 				a {
 					color:white;
-					font-weight: 400;
 					text-decoration: none;
 					font-size: 0.875rem;
 					font-family: $body-font;
@@ -104,25 +101,6 @@
 						color: $theme-color;
 					}
 				}
-			}
-		}
-
-		@include media-breakpoint-down(lg) {
-			padding: 0 !important;
-		}
-	}
-
-	@include media-breakpoint-down(md) {
-
-		&.widget-links {
-
-			.widget-content {
-				justify-content: space-between;
-			}
-
-			ul {
-				width: auto;
-				margin: auto;
 			}
 		}
 	}
@@ -149,7 +127,7 @@
 				border-radius: 0.5rem !important;
 
 				img {
-					width: 3rem !important;
+					width: 3rem;
 				}
 			}
 		}
@@ -176,27 +154,6 @@
 
 				&.heading-font {
 					letter-spacing: 0.1rem
-				}
-			}
-		}
-	}
-
-	// Widget - feedback
-	&.widget-feedback {
-		.widget-content {
-			p {
-				letter-spacing: 0.1rem
-			}
-
-			#widget-feedback-form {
-
-				input {
-					background-color: #f9f9f9;
-					color:#d0d0d0;
-				}
-				
-				.input-group-append {
-					margin-left: -2.875rem;
 				}
 			}
 		}
@@ -239,47 +196,7 @@
 
 			::placeholder {
 				color: #6a6a6a;
-				opacity: 1; /* Firefox */
-			}
-			  
-			:-ms-input-placeholder { /* Internet Explorer 10-11 */
-			color: #6a6a6a;
-			}
-			
-			::-ms-input-placeholder { /* Microsoft Edge */
-			color: #6a6a6a;
-			}
-		}
-	}
-
-	// Widget - Products
-	&.widget-products {
-		.widget-content {
-			.product {
-				display: flex;
-				align-items: center;
-				margin-bottom: 0.625rem;
-
-				.product-image {
-					flex: 1;
-					height: 8.25rem;
-					max-width: 9.75rem;
-				}
-
-				.product-details {
-					flex: 1;
-					padding: 0 1.25rem;					
-				}
-
-				.product-price {					
-					margin-bottom: 0.625rem;
-				}
-
-				.product-title {
-					a {
-						color: $white;																		
-					}					
-				}
+				opacity: 1;
 			}
 		}
 	}

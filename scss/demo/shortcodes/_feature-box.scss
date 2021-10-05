@@ -9,29 +9,27 @@
 	Featured Boxes
 -----------------------------------------------------------------*/
 .fbox {
-	padding: 0 1.5rem;
-
 	.fbox-icon {
 		img {
 			width: 5rem;
 			height: 4.5rem;
 		}
 	}
+
+	.fbox-header{
+		text-align: center;
+
+		h4 {
+			font-size: 1.625rem;
+			letter-spacing: 0.1rem;
+			font-weight: 500;
+		}
 	
-	h4 {
-		font-size: 1.625rem;
-		letter-spacing: 0.1rem;
-		font-weight: 500;
-	}
-
-	p {
-		color: #75655d;
-		line-height: 1.25rem;
-		font-size: 0.875rem;
-		letter-spacing: 0.05em;
-	}
-
-	@include media-breakpoint-down(lg) {
-		padding: 1rem;
+		p {
+			color: #75655d;
+			line-height: 1.25rem;
+			font-size: 0.875rem;
+			letter-spacing: 0.05em;
+		}
 	}
 }

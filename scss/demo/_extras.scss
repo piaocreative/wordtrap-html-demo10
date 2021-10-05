@@ -9,44 +9,11 @@
 /* ----------------------------------------------------------------
 	Extra Styles
 -----------------------------------------------------------------*/
-
-.shipping-banner {
-	position: absolute;
-	left: 4.375rem;
-	top: 5.625rem;	
-}
-
-.link-icon {
-	background-image: url(../images/icons/link.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	display: inline-block;
-	width: 2.5625rem;
-	height: 2.5625rem;
-
-	&.black {
-		background-image: url(../images/icons/link_black.png);
-	}
-}
-
-a {
-	.link-icon {
-		@include transition(all 0.3s ease-in-out);
-	}
-
-	&:hover {
-		.link-icon {
-			@include translateX(1rem);
-		}
-	}	
-}
-
 .about-top, .about-main, .about-bottom {
 	border-color: #efefef;
 
 	p {
 		font-size: 1.25rem;
-		font-family: $body-font;
 		line-height: 1.75rem;
 		color: #83746d;
 		letter-spacing: 0.05rem;
@@ -109,19 +76,6 @@ a {
 	}
 }
 
-#subscribe-form {
-	input {
-		padding: 1.8rem;
-		border-width: 3px;
-	}
-
-	button {
-		letter-spacing: 0.15rem;
-    	font-size: 1.25rem;
-		padding: 1.5rem 6.5rem;
-	}
-}
-
 .page-links {
 	display: block;
 	overflow: hidden;
@@ -171,36 +125,6 @@ a {
 }
 
 // slider items//
-.slick-prev::before, .slick-next:before {
-	font-size: 1.5rem;
-	opacity: 1;
-	color:#dcdcdc;
-
-	@include media-breakpoint-down(lg) {
-	   display: none;
-   }
-}
-
-.slick-prev, .slick-next {
-	top: 26.5rem;
-}
-
-.slick-prev {
-	left: 17rem;
-
-	@include media-breakpoint-down(lg) {
-	   display: none !important;
-   }
-}
-
-.slick-next {
-	left: 27rem;
-
-   @include media-breakpoint-down(lg) {
-	   display: none !important;
-   }
-}
-
 .slick-slide {
    margin: 2rem;
    margin-top: 4rem;

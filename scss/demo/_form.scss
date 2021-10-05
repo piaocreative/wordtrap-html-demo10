@@ -37,3 +37,16 @@ textarea {
         background-size: 100%;
     }
 }
+
+#subscribe-form {
+	input {
+		padding: 1.8rem;
+		border-width: 3px;
+	}
+
+	button {
+		letter-spacing: 0.15rem;
+    	font-size: 1.25rem;
+		padding: 1.5rem 6.5rem;
+	}
+}

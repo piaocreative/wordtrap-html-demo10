@@ -97,7 +97,7 @@ h6 {
 	color: $heading-color;
 	line-height: 1.43;
 	margin: 0 0 1.875rem 0;
-	font-family: $body-font;
+	font-family: $heading-font;
 	font-weight: 500;
 }
 
@@ -130,5 +130,6 @@ i {
 }
 
 a {
+	text-decoration: none;
 	@include transition(color 0.3s ease-in-out);
 }
