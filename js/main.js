@@ -35,7 +35,7 @@ $( document ).ready( function() {
 } );
 
 
-$(".reviews").slick({
+$(".testimonials").slick({
     dots: true,
     centerMode: true,
     slidesToShow: 1,

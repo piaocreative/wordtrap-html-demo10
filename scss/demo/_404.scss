@@ -5,33 +5,36 @@
 -----------------------------------------------------------------*/
 .error-404 {
     position: relative;
-
-    .error-banner {
-        img {
-            height: 60rem;
-        }
-    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
 
     .error-content {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
+        padding-top: 15rem;
+        padding-bottom: 3.75rem;
 
         .error-title {
-            font-size: 17rem;
-            margin-bottom: -3rem;
+            font-size: 19.375rem;
+            line-height: 1;
+            letter-spacing: 3.75rem;
+
+            @include media-breakpoint-down(md) {
+                letter-spacing: 0;
+            }
 
             @include media-breakpoint-down(sm) {
-                font-size: 14rem;
+                font-size: 14rem;                
             }
         }
 
         p {
-            font-size: 1.125rem;
+            font-size: 1.5625rem;
             font-weight: 300;
             letter-spacing: 0.05rem;
+        }
+
+        #contact-info {
+            margin-top: 11.25rem;
         }
     }
 }

@@ -20,6 +20,13 @@
 	a {
 		text-decoration: none;
 	}
+
+	.container {
+		@include media-breakpoint-up(xl) {
+			padding-left: 3.125rem;
+			padding-right: 3.125rem;
+		}
+	}
 }
 
 #footer-top {

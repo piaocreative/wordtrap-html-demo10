@@ -9,8 +9,9 @@
 /* ----------------------------------------------------------------
 	Extra Styles
 -----------------------------------------------------------------*/
-.about-top, .about-main, .about-bottom {
+.about-top {
 	border-color: #efefef;
+	position: relative;
 
 	p {
 		font-size: 1.25rem;
@@ -18,10 +19,6 @@
 		color: #83746d;
 		letter-spacing: 0.05rem;
 	}
-}
-
-.about-top {
-	position: relative;
 
 	.obverse-img {
 		position: absolute;
@@ -40,39 +37,6 @@
 			right: 0;
 			width: auto;
 		}
-	}
-}
-
-.about-main {
-	h3 {
-		&:before {
-			content: "";
-			display: inline-block;
-			height: 1px;
-			position: relative;
-			vertical-align: middle;
-			width: 17rem;
-			background-color: $secondary;
-			margin-right: 2rem;
-		}
-	}
-}
-
-.baristas-image {
-	img {
-		width: 100%;
-	}
-}
-
-.baristas-details {
-	h4 {
-		letter-spacing: 0.1rem;
-		font-weight: 800;
-	}
-
-	p {
-		font-size: 1.125rem;
-		line-height: 1.4rem;
 	}
 }
 
@@ -104,23 +68,6 @@
 	&:after {
 		left: 0.5em;
 		margin-right: -50%;
-	}
-}
-
-.about-line {
-	position: absolute;
-	top: 20rem;
-	left: 0;
-
-	div {
-		width: 9rem;
-		height: 1px;
-		background-color: $secondary;
-		margin-bottom: 1.7rem;
-	}
-
-	@include media-breakpoint-down(lg) {
-		display: none;
 	}
 }
 

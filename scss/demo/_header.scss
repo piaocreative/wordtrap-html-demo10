@@ -21,10 +21,10 @@
 
 	// Transparent header
 	&.transparent-header {
-		background-color: #857db8;
+		background-color: $dark;
 		z-index: 199;
 
-		@include media-breakpoint-up(lg) {
+		@include media-breakpoint-up(xl) {
 			background-color: transparent;
 
 			& + #content,
@@ -36,42 +36,39 @@
 			}
 		}			
 	}
-}		
+}
+
+.navbar {
+	@include media-breakpoint-down(xl) {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+	}
+
+	.container {
+		@include media-breakpoint-up(xl) {
+			padding-left: 3.125rem;
+			padding-right: 3.125rem;
+		}
+	}
+}
 
 /* ----------------------------------------------------------------
 	Sticky Header
 -----------------------------------------------------------------*/
 
-#header-wrap {
-	padding-left: 2.8125rem;
-	padding-right: 2.8125rem;
-}
-
-
 /* ----------------------------------------------------------------
 	Logo
 -----------------------------------------------------------------*/
-.navbar {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
+.navbar-brand {	
+	margin-right: 0;
+	padding-top: 0;
 
-.navbar-brand {
-	@include media-breakpoint-up(lg) {
-		position: absolute;
-		left: 50%;
-		top: 0;
-		transform: translateX(-50%);
-	}
-
-	@include media-breakpoint-down(lg) {
-		position: relative;
-		left: 0;
+	@include media-breakpoint-up(xl) {
+		padding-bottom: 2.8125rem;
 	}
 
 	img {
-		width: 12.625rem;
-		height: auto;
+		max-width: 12.625rem;
 	}
 }
 
@@ -80,34 +77,10 @@
 	Primary Menu
 -----------------------------------------------------------------*/
 
-#primary-menu {
-	z-index: 1;
-	
-	.nav-link {
-		color: white;
-		font-family: $body-font;
-		font-size: $primary-menu-font-size;
-		font-weight: $primary-menu-font-weight;		
-		letter-spacing: $primary-menu-font-spacing;
-		text-transform: $primary-menu-font-tt;
-		text-transform: uppercase;
-	}
-
-	.nav-item {
-		&:hover {
-			a {
-				color: $theme-color;
-			}
-		}
-	}
-}
-
 
 /* ----------------------------------------------------------------
 	Mega Menu
 -----------------------------------------------------------------*/
-
-// Please ignore mega menu now 
 
 
 /* ----------------------------------------------------------------
@@ -154,19 +127,9 @@
 	}
 
 	a.nav-link {
-		color: $topbar-color;
 		display: block;
 		font-size: 0.875rem;
 		font-family: $body-font;	
-
-		@include media-breakpoint-up(lg) {
-			padding: 0;	
-		}
-		
-
-		&:hover {
-			color: $topbar-hover-color;
-		}
 	}
 
 	.dropdown-toggle {
@@ -178,7 +141,7 @@
 	.dropdown-menu {
 		background: $white;
 		border: 0;
-		top: $topbar-line-height;
+		top: 100%;
 		left: 0;
 		width: 100%;		
 		margin: 0;
@@ -221,8 +184,7 @@
 -----------------------------------------------------------------*/
 #top-infos {
 	position: absolute;
-	bottom: 0rem;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	right: 0;
 	display: flex;
@@ -241,44 +203,37 @@
 /* ----------------------------------------------------------------
 	Top Social
 -----------------------------------------------------------------*/
-
-#top-social,
-#top-social ul { margin: 0; }
-
 #top-social {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	display: flex;
-	align-items: center;
-	z-index: 1;
+	@include media-breakpoint-up(xl) {
+		padding-left: 0.75rem;
+		position: absolute;
+		left: 0;
+		top: 50%;
 
-	ul {
-		transform: rotate(90);
-	}
+		@include translateY(-50%);
 
-	li {
-		padding: 0 0.25rem;
-		margin-bottom: 1rem;
+		li {
+			padding: 0.5rem 0;
+		}
 
 		a {
-			background-color: rgba($topbar-color, 0.7);
+			background-color: #808080;
 			border-radius: 50%;
 			color: black;
 			display: inline-block;
-			line-height: 1.8125rem;
-			width: 1.55rem;
-			height: 1.55rem;		
+			line-height: 1.5rem;
+			width: 1.5rem;
+			height: 1.5rem;		
 			vertical-align: middle;
-			text-align: center;
+			text-align: center;			
 
 			&:hover {
-				color: $theme-color;
+				color: $theme-color
 			}
 
 			i {
-				vertical-align: top;
-				line-height: 1.8125rem;
+				vertical-align: middle;
+				line-height: 1.5rem;
 				font-size: 0.875rem;
 			}
 		}
@@ -291,13 +246,9 @@
 -----------------------------------------------------------------*/
 
 
-
-
 /* ----------------------------------------------------------------
 	Top Cart
 -----------------------------------------------------------------*/
-
-
 
 
 /* ----------------------------------------------------------------

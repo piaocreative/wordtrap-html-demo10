@@ -59,13 +59,13 @@
 					margin-bottom: 1rem;
 			
 					a {
-						background-color: rgba($topbar-color, 0.7);
+						background-color: #808080;
 						border-radius: 50%;
 						color: black;
 						display: inline-block;
-						line-height: 1.8125rem;
-						width: 1.65rem;
-						height: 1.65rem;		
+						line-height: 1.5rem;
+						width: 1.5rem;
+						height: 1.5rem;		
 						vertical-align: middle;
 						text-align: center;
 			
@@ -74,8 +74,8 @@
 						}
 			
 						i {
-							vertical-align: top;
-							line-height: 1.8125rem;
+							vertical-align: middle;
+							line-height: 1.5rem;
 							font-size: 0.875rem;
 						}
 					}

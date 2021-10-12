@@ -123,27 +123,27 @@
 
             <div class="content-wrap">
 
-                <!-- banner side
+                <!-- Banner
                 ============================================= -->
-                <section id="banner">
+                <section id="banner" style="background-image: url(images/banner/banner.png);">                    
 
-                    <img src="./images/banner/banner.png" alt="banner" class="img-fluid">
+                    <div class="container h-100">
 
-                    <div id="page-title">
+                        <div class="row h-100">
 
-                        <div class="container h-100">
-    
-                            <div class="row align-items-center justify-content-center h-100">
-                                <div class="text-center">
+                            <div class="col d-flex align-items-center justify-content-center h-100">
+
+                                <div id="page-title text-center">
                                     <h1 class="title text-white fs-1">Contacts</h1>
                                 </div>
+                                
                             </div>
-    
+                            
                         </div>
-    
+
                     </div>
                     
-                </section><!-- #banner -->
+                </section><!-- Banner -->
 
                 <div class="section">
                     
@@ -164,7 +164,6 @@
                         </div><!-- Map -->
 
                     </div>
-
                     
                 </div>
 
@@ -183,7 +182,7 @@
                             <div class="col-6 col-lg-3">
     
                                 <div class="widget widget-custom-html text-center text-lg-start">
-                                    <p class="widget-title h4 text-secondary fw-semi-bold" style="font-size: 1.125rem;">Address</p>
+                                    <h4 class="widget-title text-secondary fw-semi-bold" style="font-size: 1.125rem;">Address</h4>
                                     <div class="widget-content">
                                         <p class="m-0 text-secondary">1300-1320 Old Atlantic Ave Chesapeake, VA.</p>
                                     </div>                            
@@ -194,7 +193,7 @@
                             <div class="col-6 col-lg-1 offset-lg-1">
     
                                 <div class="widget widget-custom-html text-center text-lg-start">
-                                    <p class="widget-title text-secondary fw-semi-bold" style="font-size: 1.125rem;">phone</p>
+                                    <h4 class="widget-title text-secondary fw-semi-bold" style="font-size: 1.125rem;">phone</h4>
                                     <div class="widget-content">
                                         <p class="m-0 text-secondary">+123 567 9858</p>
                                     </div>                            
@@ -205,7 +204,7 @@
                             <div class="col-6 col-lg-1 offset-lg-1">
     
                                 <div class="widget widget-custom-html text-center text-lg-start">
-                                    <p class="widget-title text-secondary fw-semi-bold" style="font-size: 1.125rem;">email</p>
+                                    <h4 class="widget-title text-secondary fw-semi-bold" style="font-size: 1.125rem;">email</h4>
                                     <div class="widget-content">
                                         <p class="m-0 text-secondary">mail@saler.com</p>
                                     </div>                            
@@ -216,7 +215,7 @@
                             <div class="col-6 col-lg-2 offset-lg-1">
     
                                 <div class="widget widget-custom-html text-center text-lg-start">
-                                    <p class="widget-title text-secondary fw-semi-bold">working days/hours</p>
+                                    <h4 class="widget-title text-secondary fw-semi-bold" style="font-size: 1.125rem;">working days/hours</h4>
                                     <div class="widget-content">
                                         <p class="m-0 text-secondary">Mon-Sun / 9:00 AM - 8:00 PM</p>
                                     </div>                            
@@ -248,52 +247,61 @@
                 ============================================= -->
                 <div class="section bg-cover" style="background-image: url(./images/contact/contact-bg.png);">
 
-                    <div class="col-lg-5 offset-lg-2">
+                    <div class="container">
 
-                        <div class="heading-block text-center">
-                            <h3 class="title text-secondary mb-2">Contact Us</h3>
-                            <div class="sub-icon">
-                                <img src="./images/icons/coffe.png" class="img-fluid">
+                        <div class="row">
+
+                            <div class="col-10 col-md-8 col-lg-6 offset-1 offset-md-2 offset-lg-1">
+
+                                <div class="heading-block text-center">
+                                    <h3 class="title text-secondary mb-2">Contact Us</h3>
+                                    <div class="sub-icon">
+                                        <img src="./images/icons/coffe.png" class="img-fluid">
+                                    </div>
+                                </div>
+        
+                                <form action="#" id="contact">
+        
+                                    <div class="row">
+        
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control bg-transparent" id="contactName" placeholder="Name">
+                                                <label for="contactName">Your name</label>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-2">
+                                                <input type="email" class="form-control bg-transparent" id="contactEmail" placeholder="name@example.com">
+                                                <label for="contactEmail" class="d-flex align-items-start">Email address<span class="text-primary fs-5 ms-1">*</span></label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-12">
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control bg-transparent" id="contactEmail" placeholder="name@example.com">
+                                                <label for="contactEmail" class="d-flex align-items-start">Subject:</label>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-md-12">
+                                            <div class="form-floating mb-2">
+                                                <textarea class="form-control bg-transparent h-auto" maxlength="5000" rows="10" id="contactComment" placeholder="Message"></textarea>
+                                                <label for="contactComment" class="d-flex align-items-start">Your Message:</label>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" row="5" class="btn btn-primary body-font text-white text-uppercase">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+    
                             </div>
+    
                         </div>
 
-                        <form action="#" id="contact">
-
-                            <div class="row">
-
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-2">
-                                        <input type="text" class="form-control bg-transparent" id="contactName" placeholder="Name">
-                                        <label for="contactName">Your name</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-2">
-                                        <input type="email" class="form-control bg-transparent" id="contactEmail" placeholder="name@example.com">
-                                        <label for="contactEmail" class="d-flex align-items-start">Email address<span class="text-primary fs-5 ms-1">*</span></label>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-12">
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control bg-transparent" id="contactEmail" placeholder="name@example.com">
-                                        <label for="contactEmail" class="d-flex align-items-start">Subject:</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <div class="form-floating mb-2">
-                                        <textarea class="form-control bg-transparent h-auto" maxlength="5000" rows="10" id="contactComment" placeholder="Message"></textarea>
-                                        <label for="contactComment" class="d-flex align-items-start">Your Message:</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12 text-center">
-                                    <button type="submit" row="5" class="btn btn-primary body-font text-white text-uppercase">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
                     </div>
 
                 </div><!-- contact -->
@@ -312,11 +320,11 @@
                 ============================================= --> 
                 <div id="footer-top">
 
-                    <nav id="primary-menu" class="navbar-expand-xxl navbar-light d-lg-flex justify-content-between align-items-center w-100 text-center">
+                    <nav class="navbar navbar-dark justify-content-center justify-content-xl-between">
 
-                        <ul class="navbar-nav gap-2 d-flex justify-content-between align-items-center">
+                        <ul class="nav flex-row d-none d-xl-flex" id="primary-menu">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Home</a>
+                                <a href="#" class="nav-link ps-0">Home</a>
                             </li>                                  
                             <li class="nav-item">
                                 <a href="#" class="nav-link">About Us</a>
@@ -328,23 +336,19 @@
                                 <a href="#" class="nav-link">News</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Reviews</a>
-                            </li>
-                            <li class="nav-item">
                                 <a href="#" class="nav-link">Contact Us</a>
                             </li>
-                        </ul>    
+                        </ul>
 
-                        <a href="index.html" class="logo text-center p-0" data-dark-logo="images/logo.png">
+                        <!-- Logo
+                        ============================================= -->
+                        <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
                             <img src="images/logo.png" alt="Saler Logo">
                         </a>
-                        
-                        <ul class="navbar-nav gap-2">
+
+                        <ul class="nav flex-row d-none d-xl-flex" id="secondary-menu">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Menu</a>
-                            </li>                                  
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Shipping and payment</a>
+                                <a href="#" class="nav-link">My Wishlist</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Cart</a>
@@ -353,22 +357,15 @@
                                 <a href="#" class="nav-link">My account</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Log in</a>
+                                <a href="#" class="nav-link pe-0">Log in</a>
                             </li>
-                        </ul>   
+                        </ul>
 
                     </nav>
 
                     <div class="row mt-5">
 
-                        <div class="col-lg-3 order-lg-2 offset-xl-1">
-                            <div class="text-center text-lg-start">
-                                <p class="fs-6 text-white text-uppercase mb-1">Subscribe to our the free newslettr</h4>
-                                <p class="mb-2 mb-lg-0 text-white" style="font-size: 0.75rem;">Get all the latest information on Events, Sales and Offers.</p>                               
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 order-lg-1">
+                        <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3 offset-sm-1 offset-md-3 offset-lg-0">
                             <div class="form-group mb-2 mb-lg-0">
                                 <div class="input-group border" style="border-color:#3d3d3d !important;">
                                     <input class="form-control bg-transparent border-0" id="search" name="search" type="text"/>
@@ -378,8 +375,15 @@
                                 </div>
                             </div> 
                         </div>
+
+                        <div class="col-lg-3 offset-xl-1">
+                            <div class="text-center text-lg-start">
+                                <p class="fs-6 text-white text-uppercase body-font mb-1">Subscribe to our the free newslettr</h4>
+                                <p class="mb-2 mb-lg-0 text-white" style="font-size: 0.75rem;">Get all the latest information on Events, Sales and Offers.</p>                               
+                            </div>
+                        </div>                        
                         
-                        <div class="col-lg-5 order-lg-3">
+                        <div class="col-sm-10 col-md-6 col-lg-5 offset-sm-1 offset-md-3 offset-lg-0">
                             <div class="widget widget-subscribe">
                                 <div class="widget-content">
                                     <form id="widget-subscribe-form" action="#" method="post" class="m-0">
@@ -415,7 +419,7 @@
 
                         </div>
                         
-                        <div class="col-6 col-lg-1 offset-xl-1">
+                        <div class="col-6 col-lg-2 col-xl-1 offset-xl-1">
 
                             <div class="widget widget-custom-html text-center text-lg-start">
                                 <p class="widget-title text-white">phone</p>
@@ -426,7 +430,7 @@
 
                         </div>
                         
-                        <div class="col-6 col-lg-1 offset-xl-1">
+                        <div class="col-6 col-lg-2 col-xl-1 offset-xl-1">
 
                             <div class="widget widget-custom-html text-center text-lg-start">
                                 <p class="widget-title text-white">email</p>
@@ -437,7 +441,7 @@
 
                         </div>
 
-                        <div class="col-6 col-lg-2 offset-xl-1">
+                        <div class="col-6 col-lg-3 col-xl-2 offset-xl-1">
 
                             <div class="widget widget-custom-html text-center text-lg-start">
                                 <p class="widget-title text-white">working days/hours</p>

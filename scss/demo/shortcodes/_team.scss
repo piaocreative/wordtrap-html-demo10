@@ -1,0 +1,23 @@
+.team {
+    .team-image {
+        img {
+            width: 100%;
+        }
+    }
+
+    .team-details {
+        h4 {
+            letter-spacing: 0.1rem;
+            font-weight: 800;
+        }
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.625rem;
+        }
+    }
+}
+
+.teams {
+    border-color: #efefef;
+}
