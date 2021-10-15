@@ -19,17 +19,6 @@
 .widget {
 	position: relative;
 
-	p {
-		font-family: $body-font;
-		line-height: 1.3rem;
-		color: #ffffff;
-		font-size: 0.75rem;
-	}
-
-	a {
-		font-family: $body-font;
-	}
-
 	.widget-title {
 		color: #7d7d7d;		
 		font-size: 0.75rem;
@@ -144,8 +133,7 @@
 
 			p {
 				color: #ffffff;
-				font-size: 0.875rem;
-				font-family: $body-font;
+				font-weight: 300;
 
 				&.h4 {
 					font-size: 1.5rem;
@@ -173,24 +161,6 @@
 				
 				.input-group-append {
 					margin-left: 1rem;
-				}
-
-				.input-group {
-					input {
-						font-size: 0.875rem;
-					}
-
-					button {
-						padding: 1.2rem 3rem;
-						letter-spacing: 0.1rem;
-						font-size: 0.875rem;
-						color: $white;
-
-						i {
-							font-size: 0.9rem;
-							margin-left: 0.5rem;
-						}
-					}
 				}
 			}
 
